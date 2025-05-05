@@ -1,0 +1,8 @@
+text = "hello world"
+
+print("Reverse:", text[::-1])
+
+char = 'l'
+print(f"Count of '{char}':", text.count(char))
+
+print("Replace 'l' with '*':", text.replace('l', '*'))
