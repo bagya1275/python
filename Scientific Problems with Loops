@@ -1,0 +1,14 @@
+# Number series (1 to n)
+n = 5
+for i in range(1, n + 1):
+    print(i, end=' ')
+
+# Number pattern
+print("\nPattern:")
+for i in range(1, 6):
+    print(str(i) * i)
+
+# Pyramid pattern
+print("Pyramid:")
+for i in range(1, 6):
+    print(" " * (5 - i) + "*" * (2 * i - 1))
