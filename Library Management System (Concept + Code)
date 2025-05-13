@@ -1,0 +1,27 @@
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+        self.available = True
+
+library = []
+
+def add_book(title, author):
+    library.append(Book(title, author))
+
+def borrow_book(title):
+    for book in library:
+        if book.title == title and book.available:
+            book.available = False
+            return f"You borrowed '{title}'"
+    return "Book not available"
+
+def return_book(title):
+    for book in library:
+        if book.title == title:
+            book.available = True
+            return f"You returned '{title}'"
+
+add_book("Python Basics", "John")
+print(borrow_book("Python Basics"))
+print(return_book("Python Basics"))
