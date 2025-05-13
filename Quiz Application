@@ -1,0 +1,15 @@
+questions = [
+    {"q": "Capital of France?", "options": ["Paris", "London", "Rome"], "ans": "Paris"},
+    {"q": "2 + 2?", "options": ["3", "4", "5"], "ans": "4"},
+]
+
+score = 0
+for q in questions:
+    print(q["q"])
+    for i, option in enumerate(q["options"], 1):
+        print(f"{i}. {option}")
+    ans = input("Your answer: ")
+    if q["options"][int(ans)-1] == q["ans"]:
+        score += 1
+
+print(f"Final Score: {score}/{len(questions)}")
