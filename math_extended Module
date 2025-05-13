@@ -1,0 +1,8 @@
+import math_extended
+
+n = int(input("Enter a number: "))
+a = int(input("Enter first number for GCD: "))
+b = int(input("Enter second number for GCD: "))
+
+print("Square Root:", math_extended.find_sqrt(n))
+print("GCD:", math_extended.find_gcd(a, b))
