@@ -1,0 +1,4 @@
+import file_operations
+
+file_operations.write_to_file("sample.txt")
+file_operations.read_from_file("sample.txt")
